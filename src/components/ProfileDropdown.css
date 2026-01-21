@@ -1,0 +1,122 @@
+.profile-dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background: transparent;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 72px;
+  right: 16px;
+  width: 320px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px 1px rgba(64, 60, 67, 0.16), 0 2px 6px 2px rgba(64, 60, 67, 0.12);
+  overflow: hidden;
+  z-index: 2001;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  background-color: #fff;
+}
+
+.profile-avatar-large {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #d93025 0%, #ea4335 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: #5f6368;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-divider {
+  height: 1px;
+  background-color: rgba(60, 64, 67, 0.12);
+  margin: 8px 0;
+}
+
+.profile-options {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.profile-option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #202124;
+  text-align: left;
+  width: 100%;
+  transition: background-color 0.1s;
+  font-family: inherit;
+}
+
+.profile-option:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.profile-option .material-icons {
+  font-size: 20px;
+  color: #5f6368;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.profile-option-text {
+  color: #5f6368;
+  font-size: 13px;
+}
+
+.profile-option.sign-out {
+  color: #5f6368;
+  font-weight: 500;
+}
+
+.profile-option.sign-out:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+

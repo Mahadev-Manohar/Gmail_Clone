@@ -1,0 +1,210 @@
+.compose-overlay {
+  position: fixed;
+  bottom: 0;
+  right: 16px;
+  width: 600px;
+  max-height: 592px;
+  z-index: 1000;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.compose-window {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  max-height: 592px;
+}
+
+.compose-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: #404040;
+  color: #fff;
+  min-height: 40px;
+}
+
+.compose-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.compose-header-actions {
+  display: flex;
+  gap: 0;
+}
+
+.compose-header-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.compose-header-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.compose-header-button .material-icons {
+  font-size: 16px;
+}
+
+.compose-content {
+  flex: 1;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.compose-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 48px;
+}
+
+.compose-field-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5f6368;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.compose-field-options {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px 8px 96px;
+}
+
+.compose-option-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #1a73e8;
+  padding: 4px 0;
+  font-weight: 500;
+}
+
+.compose-option-button:hover {
+  text-decoration: underline;
+}
+
+.compose-input {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  flex: 1;
+  color: #202124;
+}
+
+.compose-input::placeholder {
+  color: #5f6368;
+}
+
+.compose-body-field {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.compose-textarea {
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  line-height: 1.5;
+  flex: 1;
+  min-height: 200px;
+  color: #202124;
+}
+
+.compose-textarea::placeholder {
+  color: #5f6368;
+}
+
+.compose-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 52px;
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.1s, box-shadow 0.1s;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.send-button:hover {
+  background-color: #1765cc;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.send-button:active {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.send-button .material-icons {
+  font-size: 18px;
+}
+
+.compose-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.compose-footer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6368;
+}
+
+.compose-footer-button:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.compose-footer-button .material-icons {
+  font-size: 20px;
+}
+
