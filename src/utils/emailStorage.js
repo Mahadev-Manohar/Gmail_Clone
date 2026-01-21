@@ -844,6 +844,857 @@ Automated Rollout Systems`,
         trash: false,
         snoozed: false,
         important: false
+      },
+      {
+        id: '35',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations on Your Promotion',
+        body: `Dear Colleagues,
+We are pleased to announce that recent internal role realignments have been successfully completed.
+Several team members have transitioned into updated responsibilities following the latest governance review cycle.
+Please join us in congratulating all individuals who have accepted their new roles and continue to demonstrate professionalism and adaptability in evolving operational environments.
+Further clarification on role-specific access privileges will be shared through departmental briefings where applicable.
+Thank you for your continued cooperation and commitment.
+Regards,
+DullSleep Human Capital Operations`,
+        timestamp: new Date(now - 21600000).toISOString(), // 6 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '36',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Promotion Acknowledgement & Role Confirmation',
+        body: `Dear Team,
+Congratulations to those who have recently been promoted or reassigned under the revised organizational structure.
+As a reminder, promotion does not automatically imply expanded access unless explicitly stated within the role documentation. All promoted individuals are expected to adhere strictly to updated compliance and information stewardship guidelines.
+Any questions regarding scope or responsibility should be directed through appropriate managerial channels.
+Sincerely,
+DullSleep Compliance & Oversight Unit`,
+        timestamp: new Date(now - 43200000).toISOString(), // 12 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '37',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Role Transition — Congratulations',
+        body: `Dear Team,
+We extend our congratulations to the personnel who have successfully transitioned into elevated roles this quarter.
+These appointments reflect trust, accountability, and alignment with DullSleep's long-term information governance strategy. Role details may vary depending on operational needs and should not be inferred beyond official communications.
+Thank you for respecting confidentiality during this transition period.
+Regards,
+DullSleep Administrative Council`,
+        timestamp: new Date(now - 259200000).toISOString(), // 3 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '38',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations — Role Update Processed',
+        body: `Dear Team Member,
+Your promotion acknowledgment has been logged successfully within the internal registry.
+Please be advised that system visibility of your updated role may vary across platforms due to synchronization cycles. No action is required unless otherwise notified.
+Congratulations, and thank you for your continued service.
+— Automated Notice
+DullSleep Internal Systems`,
+        timestamp: new Date(now - 345600000).toISOString(), // 4 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '39',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Formal Congratulations on Role Advancement',
+        body: `Dear All,
+This message serves to formally recognize recent promotions across several divisions.
+Promoted roles carry with them heightened responsibility, discretion, and adherence to internal standards.
+Please note that documentation updates may lag behind operational enforcement.
+Congratulations once again to those entrusted with these roles.
+Warm regards,
+DullSleep Organizational Development Office`,
+        timestamp: new Date(now - 129600000).toISOString(), // 1.5 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '51',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Manager Promotion Announcement',
+        body: `Dear Team,
+
+We are pleased to announce that Mr. Snape has been promoted to a senior management position within our organization. His new role as Senior Information Steward reflects our confidence in his capabilities and dedication.
+
+As a manager in this capacity, he will oversee critical information governance functions and ensure compliance with our organizational standards.
+
+Please join us in congratulating him on this achievement.
+
+Best regards,
+DullSleep Management Team`,
+        timestamp: new Date(now - 172800000).toISOString(), // 2 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '52',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations on Your New Position',
+        body: `Dear Colleagues,
+
+We are delighted to inform you that Mr. Snape has been promoted to a new position within DullSleep. His elevation to Senior Information Steward demonstrates our commitment to recognizing excellence and dedication.
+
+This promotion comes with increased responsibilities in information management and organizational stewardship. We are confident he will excel in this role.
+
+Congratulations on this well-deserved advancement.
+
+Regards,
+DullSleep Human Resources`,
+        timestamp: new Date(now - 259200000).toISOString(), // 3 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '53',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Promotion Notification - Senior Role Assignment',
+        body: `Dear Team Members,
+
+This is to formally notify you that Mr. Snape has been promoted to the position of Senior Information Steward. This promotion recognizes his outstanding contributions and expertise in information governance.
+
+As part of his new responsibilities, he will manage critical information assets and ensure proper stewardship across all organizational platforms.
+
+We congratulate him on this achievement and look forward to his continued success.
+
+Sincerely,
+DullSleep Executive Office`,
+        timestamp: new Date(now - 345600000).toISOString(), // 4 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '54',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations - New Managerial Role',
+        body: `Hello Team,
+
+We are excited to announce that Mr. Snape has been promoted to Senior Information Steward. This managerial position reflects his expertise and commitment to our organization's information governance objectives.
+
+His promotion to this senior role will enhance our information management capabilities and strengthen our organizational structure.
+
+Please extend your congratulations to him.
+
+Best wishes,
+DullSleep Leadership Council`,
+        timestamp: new Date(now - 432000000).toISOString(), // 5 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '55',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Role Elevation - Congratulations on Promotion',
+        body: `Dear All,
+
+We are pleased to announce the promotion of Mr. Snape to Senior Information Steward. This elevation recognizes his valuable contributions and positions him in a key managerial role within our information governance framework.
+
+His new position as Senior Information Steward will involve overseeing critical information assets and ensuring organizational compliance.
+
+Congratulations on this well-deserved promotion.
+
+Warm regards,
+DullSleep Board of Directors`,
+        timestamp: new Date(now - 518400000).toISOString(), // 6 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '56',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations on Your Advancement',
+        body: `Dear Team,
+
+We congratulate Mr. Snape on his promotion to Senior Information Steward. This advancement to a senior managerial position reflects our confidence in his abilities and dedication to information stewardship.
+
+As Senior Information Steward, he will play a crucial role in managing our organizational information assets and ensuring proper governance standards.
+
+We are proud to recognize his achievements through this promotion.
+
+Regards,
+DullSleep Operations Team`,
+        timestamp: new Date(now - 604800000).toISOString(), // 7 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '57',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Promotion Announcement - Senior Information Steward',
+        body: `Dear Colleagues,
+
+We are delighted to announce that Mr. Snape has been promoted to Senior Information Steward. This promotion recognizes his exceptional work and positions him in a senior managerial capacity within our organization.
+
+His new role as Senior Information Steward will involve critical responsibilities in information governance and organizational stewardship.
+
+Please join us in congratulating him on this achievement.
+
+Best regards,
+DullSleep Administration`,
+        timestamp: new Date(now - 691200000).toISOString(), // 8 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '58',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations - New Senior Position',
+        body: `Hello Team,
+
+We are pleased to inform you that Mr. Snape has been promoted to Senior Information Steward. This senior managerial promotion reflects his outstanding performance and expertise in information management.
+
+As Senior Information Steward, he will oversee important information governance functions and ensure compliance with our organizational standards.
+
+Congratulations on this well-deserved promotion.
+
+Sincerely,
+DullSleep Management`,
+        timestamp: new Date(now - 777600000).toISOString(), // 9 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '59',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Manager Promotion - Congratulations',
+        body: `Dear All,
+
+We congratulate Mr. Snape on his promotion to Senior Information Steward. This managerial advancement recognizes his dedication and positions him in a senior role within our information governance structure.
+
+His promotion to Senior Information Steward demonstrates our commitment to recognizing excellence and providing opportunities for professional growth.
+
+We are proud to announce this promotion.
+
+Warm regards,
+DullSleep Executive Team`,
+        timestamp: new Date(now - 864000000).toISOString(), // 10 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '60',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Formal Promotion Notice - Senior Information Steward',
+        body: `Dear Team,
+
+This is to formally inform you that, effective immediately, Mr. Snape has been elevated to the role of Senior Information Steward within the DullSleep organization.
+
+In this capacity, he will be responsible for overseeing the integrity, continuity, and controlled dissemination of sensitive organizational information across all internal platforms.
+
+Please note that:
+* Access policies may be revised without prior notice.
+* Certain records may be archived, segmented, or restricted in alignment with governance standards.
+* All departments are expected to comply with stewardship directives.
+
+This appointment reflects continued confidence in his discretion, consistency, and commitment to safeguarding critical knowledge.
+
+Further details, where applicable, will be communicated through official channels.
+
+Regards,
+DullSleep Information Governance Office`,
+        timestamp: new Date(now - 950400000).toISOString(), // 11 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '40',
+        from: 'noreply@bank-security-alert.com',
+        to: 'snape@gmail.com',
+        subject: 'URGENT: Verify Your Account - Suspicious Activity Detected',
+        body: `Dear Valued Customer,
+
+We have detected unusual activity on your account. For your security, we need you to verify your identity immediately.
+
+Please click the link below to verify your account:
+https://bank-security-alert.com/verify?token=xyz123
+
+If you do not verify within 24 hours, your account will be temporarily suspended.
+
+Thank you for your immediate attention to this matter.
+
+Bank Security Team
+This is an automated message. Please do not reply.`,
+        timestamp: new Date(now - 3600000).toISOString(), // 1 hour ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '41',
+        from: 'winner@lottery-international.prize',
+        to: 'snape@gmail.com',
+        subject: '🎉 CONGRATULATIONS! You Won $1,000,000!',
+        body: `Dear Winner,
+
+Congratulations! You have been selected as the winner of our International Lottery Prize!
+
+You have won $1,000,000 USD!
+
+To claim your prize, please provide the following information:
+- Full name
+- Date of birth
+- Bank account details
+- Social Security Number
+
+Reply to this email immediately to claim your prize. You have 48 hours to respond.
+
+Congratulations again!
+Lottery International Prize Team`,
+        timestamp: new Date(now - 7200000).toISOString(), // 2 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '42',
+        from: 'support@amaz0n-security.com',
+        to: 'snape@gmail.com',
+        subject: 'Amazon Account Verification Required',
+        body: `Hello,
+
+We noticed a recent login attempt from an unrecognized device. For your security, we need to verify your account.
+
+Please verify your account by clicking here:
+http://amaz0n-security.com/verify-account
+
+If this wasn't you, please contact us immediately.
+
+Amazon Security Team`,
+        timestamp: new Date(now - 10800000).toISOString(), // 3 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '43',
+        from: 'nigerian-prince@royal-family.ng',
+        to: 'snape@gmail.com',
+        subject: 'Urgent Business Proposal - $10 Million Opportunity',
+        body: `Dear Sir/Madam,
+
+I am Prince Abubakar, son of the late King of Nigeria. I have $10 million USD that I need to transfer out of the country.
+
+I need your help to complete this transaction. In return, you will receive 30% of the total amount ($3 million).
+
+This is 100% legitimate and confidential. Please reply with your bank account details to proceed.
+
+God bless you.
+
+Prince Abubakar
+Royal Family of Nigeria`,
+        timestamp: new Date(now - 14400000).toISOString(), // 4 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '44',
+        from: 'pharmacy@cheap-meds-online.ru',
+        to: 'snape@gmail.com',
+        subject: 'Special Offer: Viagra, Cialis - 80% OFF!',
+        body: `Hello,
+
+Looking for affordable medications? We have the best prices on prescription drugs!
+
+- Viagra: $0.99 per pill
+- Cialis: $1.49 per pill
+- No prescription needed!
+- Worldwide shipping
+- 100% discreet packaging
+
+Order now: http://cheap-meds-online.ru/shop
+
+Limited time offer! Don't miss out!
+
+Best regards,
+Online Pharmacy Team`,
+        timestamp: new Date(now - 18000000).toISOString(), // 5 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '45',
+        from: 'microsoft-support@tech-help-desk.net',
+        to: 'snape@gmail.com',
+        subject: 'Windows License Expired - Renew Now',
+        body: `Dear Windows User,
+
+Your Windows license has expired. To continue using Windows, you must renew your license immediately.
+
+Click here to renew: http://tech-help-desk.net/renew-license
+
+Failure to renew within 24 hours will result in your computer being locked.
+
+Microsoft Support Team
+Windows License Division`,
+        timestamp: new Date(now - 21600000).toISOString(), // 6 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '46',
+        from: 'irs-tax-refund@irs-gov-refund.com',
+        to: 'snape@gmail.com',
+        subject: 'Tax Refund Available - Claim Your $2,847',
+        body: `Dear Taxpayer,
+
+You are eligible for a tax refund of $2,847.50.
+
+To claim your refund, please provide:
+- Social Security Number
+- Date of birth
+- Bank routing number
+
+Click here to claim: http://irs-gov-refund.com/claim
+
+This offer expires in 7 days.
+
+Internal Revenue Service
+Tax Refund Department`,
+        timestamp: new Date(now - 25200000).toISOString(), // 7 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '47',
+        from: 'paypal-security@paypal-verify.com',
+        to: 'snape@gmail.com',
+        subject: 'PayPal Account Limited - Action Required',
+        body: `Hello,
+
+Your PayPal account has been temporarily limited due to suspicious activity.
+
+To restore access, please verify your account:
+https://paypal-verify.com/restore-account
+
+You have 48 hours to complete verification or your account will be permanently closed.
+
+PayPal Security Team`,
+        timestamp: new Date(now - 28800000).toISOString(), // 8 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '48',
+        from: 'investment@get-rich-quick-scheme.com',
+        to: 'snape@gmail.com',
+        subject: 'Make $5,000 Per Week Working From Home!',
+        body: `Hello Friend,
+
+Are you tired of your 9-5 job? Make $5,000 per week working from home!
+
+No experience needed! No upfront costs! Just 2 hours per day!
+
+Join thousands of successful people who are making money right now!
+
+Click here to start: http://get-rich-quick-scheme.com/join
+
+This opportunity won't last long!
+
+Best wishes,
+Investment Team`,
+        timestamp: new Date(now - 32400000).toISOString(), // 9 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '49',
+        from: 'apple-id@apple-security-alert.net',
+        to: 'snape@gmail.com',
+        subject: 'Apple ID Locked - Unlock Now',
+        body: `Dear Apple User,
+
+Your Apple ID has been locked for security reasons.
+
+To unlock your account, please verify your identity:
+http://apple-security-alert.net/unlock-apple-id
+
+If you don't verify within 24 hours, your account will be permanently disabled.
+
+Apple Security Team`,
+        timestamp: new Date(now - 36000000).toISOString(), // 10 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '50',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Important: System Maintenance Notice',
+        body: `Dear Team Member,
+
+This is to inform you that our email system will undergo scheduled maintenance this weekend.
+
+During this time, email access may be limited. We apologize for any inconvenience.
+
+If you have any questions, please contact IT support.
+
+Thank you for your understanding.
+
+DullSleep IT Department`,
+        timestamp: new Date(now - 39600000).toISOString(), // 11 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '61',
+        from: 'snape@gmail.com',
+        to: 'dullsleep0@gmail.com',
+        subject: 'Project Completion Report - Operation Phoenix',
+        body: `Dear Management,
+
+I am writing to inform you that I have successfully completed the project Operation Phoenix. The project has been delivered on time and within budget.
+
+I have successfully completed the project Operation Phoenix and have inferred the following data from our analysis:
+
+1. System performance metrics show a 35% improvement in processing efficiency
+2. Data integrity validation completed with 99.8% accuracy
+3. Security protocols implemented and tested successfully
+4. Documentation and training materials prepared for team handover
+
+The project Operation Phoenix has met all objectives and deliverables. All stakeholders have been notified of the completion status.
+
+I have inferred these data points from comprehensive testing and analysis conducted throughout the project lifecycle. The results demonstrate significant improvements in our operational capabilities.
+
+Please let me know if you need any additional information or clarification regarding the project Operation Phoenix.
+
+Best regards,
+Snape
+Senior Information Steward`,
+        timestamp: new Date(now - 1382400000).toISOString(), // 16 days ago
+        read: true,
+        starred: false,
+        archived: false,
+        sent: true,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '62',
+        from: 'lupin.black@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Hey! Project Update and Meeting Request',
+        body: `Hey Snape,
+
+How are you? I hope everything is going well on your end.
+
+We have completed our project successfully! The team did an amazing job and everything is working as expected. I wanted to reach out and see if we can meet up soon to discuss the next steps.
+
+There's an important piece of information I need to discuss with you about our next operation. It's quite urgent and I think it would be better to talk about it in person rather than over email.
+
+Can we meet up this week? I'm free most afternoons. Let me know what works for you.
+
+Also, regarding the next operation - there's an important alert you should be aware of: "T5U3". This is critical information that we need to address before moving forward.
+
+Looking forward to hearing from you soon!
+
+Take care,
+Lupin`,
+        timestamp: new Date(now - 1036800000).toISOString(), // 12 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '63',
+        from: 'careergrowth@solutions-network.com',
+        to: 'snape@gmail.com',
+        subject: '🎉 Congratulations on Your New Role!',
+        body: `Dear User,
+Congratulations!
+Our records indicate that your professional profile has been marked as recently promoted.
+To celebrate this achievement, you may be eligible for exclusive leadership tools and executive resources.
+Click below to confirm your role update and unlock benefits.
+Failure to confirm within 24 hours may result in role downgrade.
+Best regards,
+CareerGrowth Solutions`,
+        timestamp: new Date(now - 10800000).toISOString(), // 3 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '64',
+        from: 'notifications@professional-network.org',
+        to: 'snape@gmail.com',
+        subject: 'Someone Congratulated You on Your Promotion',
+        body: `Hi,
+A contact from your professional network has congratulated you on your recent role promotion.
+To view the message and see who congratulated you, please sign in to your account.
+Stay connected,
+Professional Network Team`,
+        timestamp: new Date(now - 14400000).toISOString(), // 4 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '65',
+        from: 'finance@global-payroll-services.net',
+        to: 'snape@gmail.com',
+        subject: 'Role Promotion Bonus Pending — Action Required',
+        body: `Dear Employee,
+Congratulations on your promotion.
+Due to your recent role upgrade, you qualify for a one-time bonus distribution.
+However, your payment cannot be processed until role verification is completed.
+Please review the attached form to avoid delays.
+Finance Desk
+Global Payroll Services`,
+        timestamp: new Date(now - 18000000).toISOString(), // 5 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
+      },
+      {
+        id: '66',
+        from: 'noreply@system-notification.service',
+        to: 'snape@gmail.com',
+        subject: 'Promotion Recorded Successfully',
+        body: `Hello,
+This automated message confirms that a promotion-related role update was detected.
+No further action is required at this time.
+Please do not reply to this message.
+Thank you,
+System Notification Service`,
+        timestamp: new Date(now - 25200000).toISOString(), // 7 hours ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: true,
+        trash: false,
+        snoozed: false,
+        important: false
       }
     ]
     localStorage.setItem(STORAGE_KEY, JSON.stringify(sampleEmails))
@@ -1594,6 +2445,857 @@ This notice is provided for transparency and to reduce confusion should you enco
 Operations & Deployment
 Automated Rollout Systems`,
       timestamp: new Date(now - 122688000000).toISOString(),
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '35',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Congratulations on Your Promotion',
+      body: `Dear Colleagues,
+We are pleased to announce that recent internal role realignments have been successfully completed.
+Several team members have transitioned into updated responsibilities following the latest governance review cycle.
+Please join us in congratulating all individuals who have accepted their new roles and continue to demonstrate professionalism and adaptability in evolving operational environments.
+Further clarification on role-specific access privileges will be shared through departmental briefings where applicable.
+Thank you for your continued cooperation and commitment.
+Regards,
+DullSleep Human Capital Operations`,
+      timestamp: new Date(now - 86400000).toISOString(), // 1 day ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '36',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Promotion Acknowledgement & Role Confirmation',
+      body: `Dear Team,
+Congratulations to those who have recently been promoted or reassigned under the revised organizational structure.
+As a reminder, promotion does not automatically imply expanded access unless explicitly stated within the role documentation. All promoted individuals are expected to adhere strictly to updated compliance and information stewardship guidelines.
+Any questions regarding scope or responsibility should be directed through appropriate managerial channels.
+Sincerely,
+DullSleep Compliance & Oversight Unit`,
+      timestamp: new Date(now - 172800000).toISOString(), // 2 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '37',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Role Transition — Congratulations',
+      body: `Dear Team,
+We extend our congratulations to the personnel who have successfully transitioned into elevated roles this quarter.
+These appointments reflect trust, accountability, and alignment with DullSleep's long-term information governance strategy. Role details may vary depending on operational needs and should not be inferred beyond official communications.
+Thank you for respecting confidentiality during this transition period.
+Regards,
+DullSleep Administrative Council`,
+        timestamp: new Date(now - 259200000).toISOString(), // 3 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '38',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Congratulations — Role Update Processed',
+        body: `Dear Team Member,
+Your promotion acknowledgment has been logged successfully within the internal registry.
+Please be advised that system visibility of your updated role may vary across platforms due to synchronization cycles. No action is required unless otherwise notified.
+Congratulations, and thank you for your continued service.
+— Automated Notice
+DullSleep Internal Systems`,
+        timestamp: new Date(now - 345600000).toISOString(), // 4 days ago
+        read: false,
+        starred: false,
+        archived: false,
+        sent: false,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: true
+      },
+      {
+        id: '39',
+        from: 'dullsleep0@gmail.com',
+        to: 'snape@gmail.com',
+        subject: 'Formal Congratulations on Role Advancement',
+        body: `Dear All,
+This message serves to formally recognize recent promotions across several divisions.
+Promoted roles carry with them heightened responsibility, discretion, and adherence to internal standards.
+Please note that documentation updates may lag behind operational enforcement.
+Congratulations once again to those entrusted with these roles.
+Warm regards,
+DullSleep Organizational Development Office`,
+      timestamp: new Date(now - 432000000).toISOString(), // 5 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '51',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Manager Promotion Announcement',
+      body: `Dear Team,
+
+We are pleased to announce that Mr. Snape has been promoted to a senior management position within our organization. His new role as Senior Information Steward reflects our confidence in his capabilities and dedication.
+
+As a manager in this capacity, he will oversee critical information governance functions and ensure compliance with our organizational standards.
+
+Please join us in congratulating him on this achievement.
+
+Best regards,
+DullSleep Management Team`,
+      timestamp: new Date(now - 518400000).toISOString(), // 6 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '52',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Congratulations on Your New Position',
+      body: `Dear Colleagues,
+
+We are delighted to inform you that Mr. Snape has been promoted to a new position within DullSleep. His elevation to Senior Information Steward demonstrates our commitment to recognizing excellence and dedication.
+
+This promotion comes with increased responsibilities in information management and organizational stewardship. We are confident he will excel in this role.
+
+Congratulations on this well-deserved advancement.
+
+Regards,
+DullSleep Human Resources`,
+      timestamp: new Date(now - 604800000).toISOString(), // 7 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '53',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Promotion Notification - Senior Role Assignment',
+      body: `Dear Team Members,
+
+This is to formally notify you that Mr. Snape has been promoted to the position of Senior Information Steward. This promotion recognizes his outstanding contributions and expertise in information governance.
+
+As part of his new responsibilities, he will manage critical information assets and ensure proper stewardship across all organizational platforms.
+
+We congratulate him on this achievement and look forward to his continued success.
+
+Sincerely,
+DullSleep Executive Office`,
+      timestamp: new Date(now - 691200000).toISOString(), // 8 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '54',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Congratulations - New Managerial Role',
+      body: `Hello Team,
+
+We are excited to announce that Mr. Snape has been promoted to Senior Information Steward. This managerial position reflects his expertise and commitment to our organization's information governance objectives.
+
+His promotion to this senior role will enhance our information management capabilities and strengthen our organizational structure.
+
+Please extend your congratulations to him.
+
+Best wishes,
+DullSleep Leadership Council`,
+      timestamp: new Date(now - 777600000).toISOString(), // 9 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '55',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Role Elevation - Congratulations on Promotion',
+      body: `Dear All,
+
+We are pleased to announce the promotion of Mr. Snape to Senior Information Steward. This elevation recognizes his valuable contributions and positions him in a key managerial role within our information governance framework.
+
+His new position as Senior Information Steward will involve overseeing critical information assets and ensuring organizational compliance.
+
+Congratulations on this well-deserved promotion.
+
+Warm regards,
+DullSleep Board of Directors`,
+      timestamp: new Date(now - 864000000).toISOString(), // 10 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '56',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Congratulations on Your Advancement',
+      body: `Dear Team,
+
+We congratulate Mr. Snape on his promotion to Senior Information Steward. This advancement to a senior managerial position reflects our confidence in his abilities and dedication to information stewardship.
+
+As Senior Information Steward, he will play a crucial role in managing our organizational information assets and ensuring proper governance standards.
+
+We are proud to recognize his achievements through this promotion.
+
+Regards,
+DullSleep Operations Team`,
+      timestamp: new Date(now - 950400000).toISOString(), // 11 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '57',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Promotion Announcement - Senior Information Steward',
+      body: `Dear Colleagues,
+
+We are delighted to announce that Mr. Snape has been promoted to Senior Information Steward. This promotion recognizes his exceptional work and positions him in a senior managerial capacity within our organization.
+
+His new role as Senior Information Steward will involve critical responsibilities in information governance and organizational stewardship.
+
+Please join us in congratulating him on this achievement.
+
+Best regards,
+DullSleep Administration`,
+      timestamp: new Date(now - 1036800000).toISOString(), // 12 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '58',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Congratulations - New Senior Position',
+      body: `Hello Team,
+
+We are pleased to inform you that Mr. Snape has been promoted to Senior Information Steward. This senior managerial promotion reflects his outstanding performance and expertise in information management.
+
+As Senior Information Steward, he will oversee important information governance functions and ensure compliance with our organizational standards.
+
+Congratulations on this well-deserved promotion.
+
+Sincerely,
+DullSleep Management`,
+      timestamp: new Date(now - 777600000).toISOString(), // 9 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '59',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Manager Promotion - Congratulations',
+      body: `Dear All,
+
+We congratulate Mr. Snape on his promotion to Senior Information Steward. This managerial advancement recognizes his dedication and positions him in a senior role within our information governance structure.
+
+His promotion to Senior Information Steward demonstrates our commitment to recognizing excellence and providing opportunities for professional growth.
+
+We are proud to announce this promotion.
+
+Warm regards,
+DullSleep Executive Team`,
+      timestamp: new Date(now - 864000000).toISOString(), // 10 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '60',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Formal Promotion Notice - Senior Information Steward',
+      body: `Dear Team,
+
+This is to formally inform you that, effective immediately, Mr. Snape has been elevated to the role of Senior Information Steward within the DullSleep organization.
+
+In this capacity, he will be responsible for overseeing the integrity, continuity, and controlled dissemination of sensitive organizational information across all internal platforms.
+
+Please note that:
+* Access policies may be revised without prior notice.
+* Certain records may be archived, segmented, or restricted in alignment with governance standards.
+* All departments are expected to comply with stewardship directives.
+
+This appointment reflects continued confidence in his discretion, consistency, and commitment to safeguarding critical knowledge.
+
+Further details, where applicable, will be communicated through official channels.
+
+Regards,
+DullSleep Information Governance Office`,
+      timestamp: new Date(now - 950400000).toISOString(), // 11 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '61',
+      from: 'snape@gmail.com',
+      to: 'dullsleep0@gmail.com',
+      subject: 'Project Completion Report - Operation Phoenix',
+      body: `Dear Management,
+
+I am writing to inform you that I have successfully completed the project Operation Phoenix. The project has been delivered on time and within budget.
+
+I have successfully completed the project Operation Phoenix and have inferred the following data from our analysis:
+
+1. System performance metrics show a 35% improvement in processing efficiency
+2. Data integrity validation completed with 99.8% accuracy
+3. Security protocols implemented and tested successfully
+4. Documentation and training materials prepared for team handover
+
+The project Operation Phoenix has met all objectives and deliverables. All stakeholders have been notified of the completion status.
+
+I have inferred these data points from comprehensive testing and analysis conducted throughout the project lifecycle. The results demonstrate significant improvements in our operational capabilities.
+
+Please let me know if you need any additional information or clarification regarding the project Operation Phoenix.
+
+Best regards,
+Snape
+Senior Information Steward`,
+      timestamp: new Date(now - 1382400000).toISOString(), // 16 days ago
+      read: true,
+      starred: false,
+      archived: false,
+      sent: true,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '62',
+      from: 'lupin.black@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Hey! Project Update and Meeting Request',
+      body: `Hey Snape,
+
+How are you? I hope everything is going well on your end.
+
+We have completed our project successfully! The team did an amazing job and everything is working as expected. I wanted to reach out and see if we can meet up soon to discuss the next steps.
+
+There's an important piece of information I need to discuss with you about our next operation. It's quite urgent and I think it would be better to talk about it in person rather than over email.
+
+Can we meet up this week? I'm free most afternoons. Let me know what works for you.
+
+Also, regarding the next operation - there's an important alert you should be aware of: "T5U3". This is critical information that we need to address before moving forward.
+
+Looking forward to hearing from you soon!
+
+Take care,
+Lupin`,
+      timestamp: new Date(now - 1036800000).toISOString(), // 12 days ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    },
+    {
+      id: '63',
+      from: 'careergrowth@solutions-network.com',
+      to: 'snape@gmail.com',
+      subject: '🎉 Congratulations on Your New Role!',
+      body: `Dear User,
+Congratulations!
+Our records indicate that your professional profile has been marked as recently promoted.
+To celebrate this achievement, you may be eligible for exclusive leadership tools and executive resources.
+Click below to confirm your role update and unlock benefits.
+Failure to confirm within 24 hours may result in role downgrade.
+Best regards,
+CareerGrowth Solutions`,
+      timestamp: new Date(now - 10800000).toISOString(), // 3 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '64',
+      from: 'notifications@professional-network.org',
+      to: 'snape@gmail.com',
+      subject: 'Someone Congratulated You on Your Promotion',
+      body: `Hi,
+A contact from your professional network has congratulated you on your recent role promotion.
+To view the message and see who congratulated you, please sign in to your account.
+Stay connected,
+Professional Network Team`,
+      timestamp: new Date(now - 14400000).toISOString(), // 4 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '65',
+      from: 'finance@global-payroll-services.net',
+      to: 'snape@gmail.com',
+      subject: 'Role Promotion Bonus Pending — Action Required',
+      body: `Dear Employee,
+Congratulations on your promotion.
+Due to your recent role upgrade, you qualify for a one-time bonus distribution.
+However, your payment cannot be processed until role verification is completed.
+Please review the attached form to avoid delays.
+Finance Desk
+Global Payroll Services`,
+      timestamp: new Date(now - 18000000).toISOString(), // 5 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '66',
+      from: 'noreply@system-notification.service',
+      to: 'snape@gmail.com',
+      subject: 'Promotion Recorded Successfully',
+      body: `Hello,
+This automated message confirms that a promotion-related role update was detected.
+No further action is required at this time.
+Please do not reply to this message.
+Thank you,
+System Notification Service`,
+      timestamp: new Date(now - 25200000).toISOString(), // 7 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '40',
+      from: 'noreply@bank-security-alert.com',
+      to: 'snape@gmail.com',
+      subject: 'URGENT: Verify Your Account - Suspicious Activity Detected',
+      body: `Dear Valued Customer,
+
+We have detected unusual activity on your account. For your security, we need you to verify your identity immediately.
+
+Please click the link below to verify your account:
+https://bank-security-alert.com/verify?token=xyz123
+
+If you do not verify within 24 hours, your account will be temporarily suspended.
+
+Thank you for your immediate attention to this matter.
+
+Bank Security Team
+This is an automated message. Please do not reply.`,
+      timestamp: new Date(now - 3600000).toISOString(), // 1 hour ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '41',
+      from: 'winner@lottery-international.prize',
+      to: 'snape@gmail.com',
+      subject: '🎉 CONGRATULATIONS! You Won $1,000,000!',
+      body: `Dear Winner,
+
+Congratulations! You have been selected as the winner of our International Lottery Prize!
+
+You have won $1,000,000 USD!
+
+To claim your prize, please provide the following information:
+- Full name
+- Date of birth
+- Bank account details
+- Social Security Number
+
+Reply to this email immediately to claim your prize. You have 48 hours to respond.
+
+Congratulations again!
+Lottery International Prize Team`,
+      timestamp: new Date(now - 7200000).toISOString(), // 2 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '42',
+      from: 'support@amaz0n-security.com',
+      to: 'snape@gmail.com',
+      subject: 'Amazon Account Verification Required',
+      body: `Hello,
+
+We noticed a recent login attempt from an unrecognized device. For your security, we need to verify your account.
+
+Please verify your account by clicking here:
+http://amaz0n-security.com/verify-account
+
+If this wasn't you, please contact us immediately.
+
+Amazon Security Team`,
+      timestamp: new Date(now - 10800000).toISOString(), // 3 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '43',
+      from: 'nigerian-prince@royal-family.ng',
+      to: 'snape@gmail.com',
+      subject: 'Urgent Business Proposal - $10 Million Opportunity',
+      body: `Dear Sir/Madam,
+
+I am Prince Abubakar, son of the late King of Nigeria. I have $10 million USD that I need to transfer out of the country.
+
+I need your help to complete this transaction. In return, you will receive 30% of the total amount ($3 million).
+
+This is 100% legitimate and confidential. Please reply with your bank account details to proceed.
+
+God bless you.
+
+Prince Abubakar
+Royal Family of Nigeria`,
+      timestamp: new Date(now - 14400000).toISOString(), // 4 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '44',
+      from: 'pharmacy@cheap-meds-online.ru',
+      to: 'snape@gmail.com',
+      subject: 'Special Offer: Viagra, Cialis - 80% OFF!',
+      body: `Hello,
+
+Looking for affordable medications? We have the best prices on prescription drugs!
+
+- Viagra: $0.99 per pill
+- Cialis: $1.49 per pill
+- No prescription needed!
+- Worldwide shipping
+- 100% discreet packaging
+
+Order now: http://cheap-meds-online.ru/shop
+
+Limited time offer! Don't miss out!
+
+Best regards,
+Online Pharmacy Team`,
+      timestamp: new Date(now - 18000000).toISOString(), // 5 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '45',
+      from: 'microsoft-support@tech-help-desk.net',
+      to: 'snape@gmail.com',
+      subject: 'Windows License Expired - Renew Now',
+      body: `Dear Windows User,
+
+Your Windows license has expired. To continue using Windows, you must renew your license immediately.
+
+Click here to renew: http://tech-help-desk.net/renew-license
+
+Failure to renew within 24 hours will result in your computer being locked.
+
+Microsoft Support Team
+Windows License Division`,
+      timestamp: new Date(now - 21600000).toISOString(), // 6 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '46',
+      from: 'irs-tax-refund@irs-gov-refund.com',
+      to: 'snape@gmail.com',
+      subject: 'Tax Refund Available - Claim Your $2,847',
+      body: `Dear Taxpayer,
+
+You are eligible for a tax refund of $2,847.50.
+
+To claim your refund, please provide:
+- Social Security Number
+- Date of birth
+- Bank routing number
+
+Click here to claim: http://irs-gov-refund.com/claim
+
+This offer expires in 7 days.
+
+Internal Revenue Service
+Tax Refund Department`,
+      timestamp: new Date(now - 25200000).toISOString(), // 7 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '47',
+      from: 'paypal-security@paypal-verify.com',
+      to: 'snape@gmail.com',
+      subject: 'PayPal Account Limited - Action Required',
+      body: `Hello,
+
+Your PayPal account has been temporarily limited due to suspicious activity.
+
+To restore access, please verify your account:
+https://paypal-verify.com/restore-account
+
+You have 48 hours to complete verification or your account will be permanently closed.
+
+PayPal Security Team`,
+      timestamp: new Date(now - 28800000).toISOString(), // 8 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '48',
+      from: 'investment@get-rich-quick-scheme.com',
+      to: 'snape@gmail.com',
+      subject: 'Make $5,000 Per Week Working From Home!',
+      body: `Hello Friend,
+
+Are you tired of your 9-5 job? Make $5,000 per week working from home!
+
+No experience needed! No upfront costs! Just 2 hours per day!
+
+Join thousands of successful people who are making money right now!
+
+Click here to start: http://get-rich-quick-scheme.com/join
+
+This opportunity won't last long!
+
+Best wishes,
+Investment Team`,
+      timestamp: new Date(now - 32400000).toISOString(), // 9 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '49',
+      from: 'apple-id@apple-security-alert.net',
+      to: 'snape@gmail.com',
+      subject: 'Apple ID Locked - Unlock Now',
+      body: `Dear Apple User,
+
+Your Apple ID has been locked for security reasons.
+
+To unlock your account, please verify your identity:
+http://apple-security-alert.net/unlock-apple-id
+
+If you don't verify within 24 hours, your account will be permanently disabled.
+
+Apple Security Team`,
+      timestamp: new Date(now - 36000000).toISOString(), // 10 hours ago
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: true,
+      trash: false,
+      snoozed: false,
+      important: false
+    },
+    {
+      id: '50',
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Important: System Maintenance Notice',
+      body: `Dear Team Member,
+
+This is to inform you that our email system will undergo scheduled maintenance this weekend.
+
+During this time, email access may be limited. We apologize for any inconvenience.
+
+If you have any questions, please contact IT support.
+
+Thank you for your understanding.
+
+DullSleep IT Department`,
+      timestamp: new Date(now - 39600000).toISOString(), // 11 hours ago
       read: false,
       starred: false,
       archived: false,
