@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import './ComposeEmail.css'
 
-function ComposeEmail({ replyTo, onSend, onSaveDraft, onClose }) {
-  const [to, setTo] = useState(replyTo ? replyTo.from : '')
-  const [cc, setCc] = useState('')
-  const [bcc, setBcc] = useState('')
-  const [subject, setSubject] = useState(replyTo ? `Re: ${replyTo.subject}` : '')
-  const [body, setBody] = useState(replyTo ? `\n\n---\nOn ${new Date(replyTo.timestamp).toLocaleString()}, ${replyTo.from} wrote:\n\n${replyTo.body}` : '')
-  const [showCc, setShowCc] = useState(false)
-  const [showBcc, setShowBcc] = useState(false)
+function ComposeEmail({ replyTo, draft, onSend, onSaveDraft, onClose, onDeleteDraft }) {
+  // If editing a draft, load draft data; otherwise use replyTo or empty
+  const [to, setTo] = useState(draft ? draft.to : (replyTo ? replyTo.from : ''))
+  const [cc, setCc] = useState(draft ? draft.cc || '' : '')
+  const [bcc, setBcc] = useState(draft ? draft.bcc || '' : '')
+  const [subject, setSubject] = useState(
+    draft ? draft.subject : (replyTo ? `Re: ${replyTo.subject}` : '')
+  )
+  const [body, setBody] = useState(
+    draft ? draft.body : (replyTo ? `\n\n---\nOn ${new Date(replyTo.timestamp).toLocaleString()}, ${replyTo.from} wrote:\n\n${replyTo.body}` : '')
+  )
+  const [showCc, setShowCc] = useState(!!(draft && draft.cc))
+  const [showBcc, setShowBcc] = useState(!!(draft && draft.bcc))
 
   const handleSend = () => {
     if (!to.trim()) {
@@ -17,8 +22,10 @@ function ComposeEmail({ replyTo, onSend, onSaveDraft, onClose }) {
     }
     onSend({
       id: Date.now().toString(),
-      from: 'you@gmail.com',
+      from: 'snape@gmail.com',
       to: to.trim(),
+      cc: cc.trim(),
+      bcc: bcc.trim(),
       subject: subject.trim(),
       body: body.trim(),
       timestamp: new Date().toISOString(),
@@ -33,8 +40,10 @@ function ComposeEmail({ replyTo, onSend, onSaveDraft, onClose }) {
   const handleSaveDraft = () => {
     onSaveDraft({
       id: Date.now().toString(),
-      from: 'you@gmail.com',
+      from: 'snape@gmail.com',
       to: to.trim(),
+      cc: cc.trim(),
+      bcc: bcc.trim(),
       subject: subject.trim(),
       body: body.trim(),
       timestamp: new Date().toISOString(),
@@ -159,7 +168,16 @@ function ComposeEmail({ replyTo, onSend, onSaveDraft, onClose }) {
               <span className="material-icons">insert_photo</span>
             </button>
           </div>
-          <button className="compose-footer-button" onClick={onClose} title="Delete draft">
+          <button 
+            className="compose-footer-button" 
+            onClick={() => {
+              if (draft && onDeleteDraft) {
+                onDeleteDraft(draft.id)
+              }
+              onClose()
+            }} 
+            title="Delete draft"
+          >
             <span className="material-icons">delete</span>
           </button>
         </div>

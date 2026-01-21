@@ -4,7 +4,7 @@ import EmailList from './components/EmailList'
 import EmailView from './components/EmailView'
 import ComposeEmail from './components/ComposeEmail'
 import ProfileDropdown from './components/ProfileDropdown'
-import { getEmails, saveEmail, deleteEmail, archiveEmail, markAsRead } from './utils/emailStorage'
+import { getEmails, saveEmail, deleteEmail, archiveEmail, markAsRead, populateInbox } from './utils/emailStorage'
 import './App.css'
 
 function App() {
@@ -12,13 +12,23 @@ function App() {
   const [selectedEmail, setSelectedEmail] = useState(null)
   const [emails, setEmails] = useState([])
   const [showCompose, setShowCompose] = useState(false)
+  const [editingDraft, setEditingDraft] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [showProfileDropdown, setShowProfileDropdown] = useState(false)
   const [userInfo] = useState({
-    name: 'User Name',
-    email: 'user@example.com',
-    initials: 'P'
+    name: 'snapeMastery',
+    email: 'snape@gmail.com',
+    initials: 'SM'
   })
+
+  useEffect(() => {
+    // Populate inbox with sample emails on first load if needed
+    const allEmails = getEmails()
+    const inboxEmails = allEmails.filter(e => !e.archived && !e.sent && !e.spam && !e.trash)
+    if (inboxEmails.length < 20) {
+      populateInbox()
+    }
+  }, [])
 
   useEffect(() => {
     setSelectedEmail(null) // Clear selected email when view changes
@@ -78,31 +88,50 @@ function App() {
   }, [searchQuery])
 
   const handleEmailSelect = (email) => {
-    setSelectedEmail(email)
-    if (!email.read) {
-      markAsRead(email.id)
-      loadEmails()
+    // If it's a draft, open it in compose window for editing
+    if (email.draft) {
+      setEditingDraft(email)
+      setShowCompose(true)
+      setSelectedEmail(null)
+    } else {
+      setSelectedEmail(email)
+      if (!email.read) {
+        markAsRead(email.id)
+        loadEmails()
+      }
     }
   }
 
   const handleSendEmail = (emailData) => {
+    // If sending a draft, delete the draft and create sent email
+    const emailId = editingDraft?.id || Date.now().toString()
+    if (editingDraft) {
+      deleteEmail(editingDraft.id)
+    }
     saveEmail({
       ...emailData,
+      id: emailId,
       sent: true,
+      draft: false,
       timestamp: new Date().toISOString(),
       read: true
     })
     setShowCompose(false)
+    setEditingDraft(null)
     loadEmails()
   }
 
   const handleSaveDraft = (emailData) => {
+    // If editing an existing draft, use its ID, otherwise create new ID
+    const draftId = editingDraft?.id || Date.now().toString()
     saveEmail({
       ...emailData,
+      id: draftId,
       draft: true,
-      timestamp: new Date().toISOString()
+      timestamp: editingDraft?.timestamp || new Date().toISOString()
     })
     setShowCompose(false)
+    setEditingDraft(null)
     loadEmails()
   }
 
@@ -110,6 +139,10 @@ function App() {
     deleteEmail(emailId)
     if (selectedEmail?.id === emailId) {
       setSelectedEmail(null)
+    }
+    if (editingDraft?.id === emailId) {
+      setEditingDraft(null)
+      setShowCompose(false)
     }
     loadEmails()
   }
@@ -198,7 +231,10 @@ function App() {
         <Sidebar
           currentView={currentView}
           setCurrentView={handleViewChange}
-          onCompose={() => setShowCompose(true)}
+          onCompose={() => {
+            setEditingDraft(null)
+            setShowCompose(true)
+          }}
           emails={emails}
         />
 
@@ -240,9 +276,14 @@ function App() {
       {showCompose && (
         <ComposeEmail
           replyTo={selectedEmail}
+          draft={editingDraft}
           onSend={handleSendEmail}
           onSaveDraft={handleSaveDraft}
-          onClose={() => setShowCompose(false)}
+          onDeleteDraft={handleDeleteEmail}
+          onClose={() => {
+            setShowCompose(false)
+            setEditingDraft(null)
+          }}
         />
       )}
 
