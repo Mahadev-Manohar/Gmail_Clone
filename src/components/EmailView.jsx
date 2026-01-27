@@ -14,6 +14,12 @@ function EmailView({ email, onDelete, onArchive, onStar, onReply, onBack }) {
     })
   }
 
+  // Check if body contains HTML tags
+  const isHTML = (text) => {
+    if (!text) return false
+    return /<[a-z][\s\S]*>/i.test(text)
+  }
+
   return (
     <div className="email-view">
       <div className="email-view-header">
@@ -88,9 +94,13 @@ function EmailView({ email, onDelete, onArchive, onStar, onReply, onBack }) {
         </div>
 
         <div className="email-view-body">
-          {email.body.split('\n').map((paragraph, index) => (
-            <p key={index}>{paragraph || <br />}</p>
-          ))}
+          {isHTML(email.body) ? (
+            <div dangerouslySetInnerHTML={{ __html: email.body }} />
+          ) : (
+            email.body.split('\n').map((paragraph, index) => (
+              <p key={index}>{paragraph || <br />}</p>
+            ))
+          )}
         </div>
       </div>
 
