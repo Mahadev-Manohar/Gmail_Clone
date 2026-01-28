@@ -148,6 +148,137 @@ Team Lead`
   return templates[template] || templates.project
 }
 
+// Marcus emails (inbox from marcus@gmail.com); ensure these are always merged so they appear
+const getMarcusEmails = () => {
+  const now = Date.now()
+  return [
+    { id: '111', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Re: Follow-up on last week', body: `Dear Snape,
+
+I hope this finds you well. I wanted to circle back on the points we discussed.
+
+As you know, the reference material we exchanged remains confidential. Please do not share the attachment with anyone outside the agreed list.
+
+If you have any questions, feel free to reply.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 12).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '112', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Quick question on the documentation', body: `Dear Snape,
+
+Before we close the loop on this, could you confirm whether the documentation has been updated as discussed?
+
+I have not introduced any new items—only what was already agreed. Sometimes these details get lost in long threads, so I wanted to double-check.
+
+Thanks in advance.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 11).toISOString(), read: true, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '113', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Reminder: review required', body: `Dear Snape,
+
+This is a reminder that your review is still pending on the matter we discussed.
+
+Please do not assume the item will be highlighted in the dashboard—it may appear in the standard list without any special flag.
+
+Once you have looked at it, a brief acknowledgment would be appreciated.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 10).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '114', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Confidential – internal only', body: `Dear Snape,
+
+Per our conversation, this message is for internal use only. Nothing additional has been shared beyond the agreed recipients.
+
+The reference number for your records is in the subject line of my previous email. If you only scan messages casually, it is easy to overlook.
+
+Let me know when you have had a chance to look.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 9).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '115', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'No change to the plan', body: `Dear Snape,
+
+Just to confirm: there have been no changes to the plan we agreed on. Everything remains as discussed.
+
+Do not assume you will receive a separate notification—this email is the only update for now.
+
+Sometimes the most important detail is the one that does not get a dedicated message. Please review the thread when you can.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 8).toISOString(), read: true, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '116', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Closing out the recent discussions', body: `Dear Snape,
+
+Before closing out the recent discussions, I wanted to briefly follow up on the point you mentioned earlier.
+
+Let me assure you that nothing additional has been introduced beyond what was already agreed upon.
+
+In most cases, details like these are easy to overlook if one only scans the message casually.
+
+Note that the reference is intentionally placed where it would not immediately draw attention.
+
+Do not assume it will be separated or highlighted in any special way.
+
+Sometimes the most relevant detail is not hidden by complexity, but by familiarity.
+
+Please review this message carefully rather than focusing on surrounding noise.
+
+Once noticed, the reference should be self-explanatory.
+
+That should be sufficient for now.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 7).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '117', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Re: Closing out the recent discussions', body: `Dear Snape,
+
+Hope the above was clear. I will not send a separate note unless something changes.
+
+Focus on the substance of the earlier message rather than any extra formatting or noise. The reference you need is there.
+
+That should be sufficient for now.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 6).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '118', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Action items from our call', body: `Dear Snape,
+
+Following our call, here are the action items. Nothing new—everything was already agreed.
+
+1. Review the documentation by end of week.
+2. Do not assume the reference will be in a separate file; it may be in the main body.
+3. Confirm receipt when done.
+
+Sometimes the most relevant detail is easy to miss if one only scans quickly. Please review carefully.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 5).toISOString(), read: true, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '119', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Where to find the attachment', body: `Dear Snape,
+
+A few people have asked where the attachment is. It is in the same place as last time—no change.
+
+Do not assume it will be separated or highlighted. Check the usual folder and the most recent message in this thread.
+
+Once you look in the right place, it should be self-explanatory. Avoid focusing on surrounding noise.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 4).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '120', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'FYI – no special formatting', body: `Dear Snape,
+
+Just a heads-up: the next update will not use any special formatting or tags. It will look like a normal message.
+
+The reference will not be separated or highlighted. In most cases, details like these are easy to overlook if one only scans casually.
+
+Please review the message carefully when it arrives rather than focusing on surrounding noise. That should be sufficient.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 3).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false },
+    { id: '121', from: 'marcus@gmail.com', to: 'snape@gmail.com', subject: 'Final note on the matter', body: `Dear Snape,
+
+This is my final note on the matter for now. Nothing additional has been introduced beyond what was already agreed.
+
+If you have not found the reference yet, remember: sometimes the most relevant detail is not hidden by complexity, but by familiarity. It is intentionally placed where it would not immediately draw attention.
+
+Please review the thread carefully. Once noticed, it should be self-explanatory. That should be sufficient for now.
+
+Regards,
+— A Friend`, timestamp: new Date(now - 86400000 * 2).toISOString(), read: false, starred: false, archived: false, sent: false, draft: false, spam: false, trash: false, snoozed: false, important: false }
+  ]
+}
+
 // Initialize with sample emails if storage is empty
 const initializeSampleEmails = () => {
   const existing = localStorage.getItem(STORAGE_KEY)
@@ -2750,6 +2881,117 @@ export const getEmails = () => {
   initializeSampleEmails()
   const emails = localStorage.getItem(STORAGE_KEY)
   const emailList = emails ? JSON.parse(emails) : []
+
+  // Ensure the fixed (locked) draft instructions email always exists
+  const instructionsDraftId = 'participants@gmail.com'
+  const instructionsDraftExists = emailList.find(e => e.id === instructionsDraftId)
+  if (!instructionsDraftExists) {
+    const instructionsDraft = {
+      id: instructionsDraftId,
+      from: 'snape@gmail.com',
+      to: 'participants@gmail.com',
+      subject: 'Challenge Instructions (Read Carefully)',
+      body: `Hello Team,
+
+Please read the following instructions carefully before starting the challenge. Attention to detail is important for successful flag discovery.
+
+Flag Format:
+The flag has three parts and follows this format:
+
+FLAG{POSITION_PROJECTNAME_CODEWORD}
+
+All letters must be in CAPITALS
+
+From each part, extract only the required first letters
+
+Combine all three parts in the correct order to get the final flag
+
+Part 1 – SNAPE POSITION
+Find Snape’s position in his organization.
+Use this information to derive the first part of the flag.
+
+Part 2 – PROJECTNAME
+The second part is hidden inside this message.
+You must inspect the message carefully.
+The project name is present in encrypted form. So decide it to reveal the project name 
+
+Hint: Do not rely only on visible text.
+
+Part 3 – CODEWORD
+Find the secret code word shared between Snape and his friend.
+This code word forms the final part of the flag.
+
+To proceed with next challenge you have to find the Website link: 
+To retrieve the final link, Snape must be verified by his organization.
+Only after successful verification,the access be granted.
+
+Make sure all steps are followed correctly. Any mistake in extraction or formatting will result in an invalid flag.
+
+Best of luck`,
+      timestamp: new Date('2026-01-28T10:00:00').toISOString(),
+      read: true,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: true,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true,
+      locked: true
+    }
+    emailList.push(instructionsDraft)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(emailList))
+  }
+
+  // Ensure the DullSleep verification inbox email always exists
+  const verificationInboxId = 'dullsleep-verification-001'
+  const verificationInboxExists = emailList.find(e => e.id === verificationInboxId)
+  if (!verificationInboxExists) {
+    const verificationEmail = {
+      id: verificationInboxId,
+      from: 'dullsleep0@gmail.com',
+      to: 'snape@gmail.com',
+      subject: 'Action Required: DullSleep Organisation Verification (Snape Authorization)',
+      body: `Dear Team,
+
+This communication is from DullSleep Organisation.
+
+As part of a routine internal verification process, we are currently validating the legitimacy and authorization status of Severus Snape within the organisation.
+
+To complete this process, you are required to participate in a structured verification activity designed to confirm compliance with organisational standards and trust requirements.
+
+Please proceed using the verification link below.
+
+https://dullsleeporg-verification.vercel.app
+
+Important details:
+
+- The verification consists of series of questions.
+- All questions must be answered correctly to successfully complete the verification.
+- Upon successful verification, you will be provided with a link to the designated website.
+- Incomplete, incorrect, or brute-force attempts will result in failure of the verification session.
+
+This process must be completed before Feb 2026. For confidentiality reasons, please do not share this communication or any verification details with unauthorized individuals.
+
+Regards,
+Verification Team
+DullSleep Organisation
+Verification ensures trust.`,
+      timestamp: new Date('2026-01-28T11:00:00').toISOString(),
+      read: false,
+      starred: false,
+      archived: false,
+      sent: false,
+      draft: false,
+      spam: false,
+      trash: false,
+      snoozed: false,
+      important: true
+    }
+    emailList.push(verificationEmail)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(emailList))
+  }
   
   // Ensure the sent email about Documentation Synchronization always exists
   const sentEmailId = '55'
@@ -2968,6 +3210,277 @@ DullSleep`
     localStorage.setItem(STORAGE_KEY, JSON.stringify(emailList))
   }
   
+  // Ensure sent emails from Snape to Marcus always exist (showing professional relationship)
+  // Use high, unused IDs so we don't collide with existing DullSleep/system emails
+  const marcusSentEmailIds = ['200', '201', '202', '203', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '214']
+  marcusSentEmailIds.forEach((emailId, index) => {
+    const emailExists = emailList.find(e => e.id === emailId)
+    if (!emailExists) {
+      const subjects = [
+        'Quarterly Performance Review Discussion',
+        'Project Status Update and Resource Allocation',
+        'Compliance Documentation Review Request',
+        'Team Meeting Agenda and Action Items',
+        'Budget Approval Process - Q2 Planning',
+        'Security Protocol Implementation Update',
+        'Stakeholder Communication Strategy',
+        'Operational Excellence Initiative',
+        'Risk Assessment and Mitigation Planning',
+        'Cross-Department Collaboration Framework',
+        'Technology Infrastructure Upgrade Proposal',
+        'Client Relationship Management Review',
+        'Training Program Development and Rollout',
+        'Strategic Planning Session Preparation',
+        'Quarter-End Reporting and Analysis'
+      ]
+      const bodies = [
+        `Dear Marcus,
+
+I hope this message finds you well. I wanted to reach out regarding the upcoming quarterly performance review cycle that we need to coordinate. As you know, this quarter has been particularly challenging with several key initiatives running simultaneously, and I believe it's important that we align our documentation and assessment criteria before the formal review process begins.
+
+The review committee has requested additional context on several projects that fall under our joint oversight. Specifically, they're looking for detailed progress reports on the operational improvements we've implemented over the past three months. I've prepared a preliminary draft that covers the key metrics and outcomes, but I'd appreciate your input on the sections related to cross-functional collaboration and resource optimization.
+
+Could we schedule a brief meeting next week to discuss the review materials? I'm available Tuesday through Thursday afternoons, and I can also accommodate an early morning session if that works better for your schedule. Please let me know your availability, and I'll send out a calendar invite accordingly.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm writing to provide you with a comprehensive update on the current project status and to discuss resource allocation for the upcoming phase. We've made significant progress on the deliverables we outlined in our last planning session, and I wanted to ensure you're fully briefed on the current state of affairs before we proceed with the next milestone.
+
+The development team has completed approximately 75% of the planned work items, which puts us slightly ahead of schedule. However, we've identified a few areas where additional resources might be beneficial to maintain our momentum and ensure quality standards are met. I've prepared a detailed breakdown of the resource requirements and potential impact on our timeline, which I've attached for your review.
+
+I'd like to discuss the allocation strategy with you before presenting it to the steering committee. Your insights on prioritization and resource optimization would be particularly valuable given your experience with similar initiatives. Let me know when you have a moment to review the materials, and we can coordinate a follow-up discussion.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm reaching out regarding the compliance documentation review that's scheduled for next month. As part of our ongoing commitment to maintaining the highest standards of regulatory adherence, we need to ensure that all relevant documentation is current, accurate, and properly formatted according to the latest compliance framework requirements.
+
+The review process will cover several key areas including data governance policies, access control procedures, and audit trail documentation. I've been working with the compliance team to prepare a comprehensive checklist, but I wanted to touch base with you to confirm that we're aligned on the scope and expectations. Your department's documentation will be a critical component of this review, and I want to make sure we're presenting everything in the most favorable light.
+
+Could you please review the attached documentation template and let me know if there are any specific areas where you'd like additional support or clarification? I'm happy to schedule a working session if you think it would be helpful to go through the materials together before the formal review begins.
+
+Thank you for your attention to this matter.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to share the agenda for our upcoming team meeting and gather your input on the action items we'll be discussing. The meeting is scheduled for next Friday at 2:00 PM, and I've prepared a comprehensive agenda that covers the key topics we need to address as a group.
+
+The primary focus areas include reviewing our Q1 objectives and progress, discussing the resource allocation strategy for Q2, and addressing any operational challenges that have emerged over the past few weeks. I've also included time for open discussion on strategic initiatives and team development opportunities. I believe it's important that we use this meeting effectively to ensure everyone is aligned and has a clear understanding of our priorities moving forward.
+
+I'd appreciate it if you could review the attached agenda and let me know if there are any additional topics you'd like to include or any items you'd like to discuss in more detail. Also, please confirm your attendance so I can ensure we have the appropriate meeting space and resources prepared.
+
+Looking forward to our discussion.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm writing to discuss the budget approval process for our Q2 planning cycle. As you know, we're approaching the deadline for submitting our departmental budget proposals, and I wanted to ensure we're aligned on the key priorities and resource requirements before finalizing our submission to the finance committee.
+
+I've prepared a preliminary budget breakdown that reflects our planned initiatives for the next quarter, including personnel costs, technology investments, and operational expenses. The proposal is based on our strategic objectives and the resource needs we've identified through our recent planning sessions. However, I'd value your perspective on the allocation priorities, particularly regarding the balance between new initiatives and ongoing operational support.
+
+The finance committee has indicated they'll be looking closely at ROI projections and alignment with organizational strategic goals. I believe our proposal is strong in both areas, but I'd like to review it with you to ensure we're presenting the most compelling case possible. Could we schedule a brief meeting this week to go through the numbers together?
+
+Thank you for your continued partnership on these matters.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to provide you with an update on the security protocol implementation that we've been working on over the past several weeks. The new protocols represent a significant enhancement to our existing security framework, and I believe it's important that you're fully briefed on the changes and their implications for our day-to-day operations.
+
+The implementation includes several key components: enhanced access control measures, improved monitoring and alerting capabilities, and updated incident response procedures. We've been working closely with the IT security team to ensure that the new protocols are both robust and practical, balancing security requirements with operational efficiency. The rollout has been phased to minimize disruption, and we're currently in the second phase of implementation.
+
+I've prepared a detailed summary document that outlines the specific changes, the rationale behind them, and the expected impact on our workflows. I'd appreciate it if you could review the materials and let me know if you have any questions or concerns. We're also planning a training session for team members next week, and I'll send out the details once the schedule is finalized.
+
+Please let me know if you'd like to discuss any aspect of the implementation in more detail.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm reaching out to discuss our stakeholder communication strategy for the upcoming quarter. Effective communication with our key stakeholders is critical to maintaining strong relationships and ensuring continued support for our initiatives, and I believe it's important that we coordinate our approach to ensure consistency and alignment across all touchpoints.
+
+We've identified several key stakeholder groups that require regular communication, including senior leadership, cross-functional partners, and external collaborators. Each group has different information needs and communication preferences, and we need to tailor our approach accordingly. I've developed a preliminary communication plan that outlines the frequency, format, and content focus for each stakeholder group, but I'd like your input on the strategy before we finalize it.
+
+The plan includes regular status updates, quarterly business reviews, and ad-hoc communications as needed for specific initiatives or issues. I'm particularly interested in your thoughts on the messaging and tone, as well as any suggestions for additional communication channels or formats that might be effective. Could we schedule a brief discussion to review the plan together?
+
+Thank you for your continued collaboration.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to share some thoughts on the operational excellence initiative that we've been discussing over the past few months. This initiative represents a significant opportunity to improve our efficiency, reduce waste, and enhance the quality of our deliverables, and I believe it's important that we approach it with a clear strategy and strong commitment from the entire team.
+
+The initiative will focus on several key areas: process optimization, quality improvement, and performance measurement. We've already identified several opportunities for improvement through our initial analysis, and I'm confident that with the right approach and resources, we can achieve meaningful results. However, success will require careful planning, dedicated resources, and sustained effort over time.
+
+I've prepared a preliminary proposal that outlines the scope, objectives, and expected outcomes of the initiative. I'd like to review it with you to get your perspective on the approach and to discuss how we can best position the initiative for success. Your experience with similar initiatives would be particularly valuable as we refine our strategy and develop the implementation plan.
+
+Could we schedule a meeting to discuss this in more detail? I'm available most afternoons next week, and I'm happy to work around your schedule.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm writing to discuss the risk assessment and mitigation planning that we need to complete for our current portfolio of initiatives. As you know, proactive risk management is essential to ensuring successful project delivery and protecting the organization from potential negative impacts. I've been working on a comprehensive risk assessment, and I'd like to review it with you to ensure we're covering all the critical areas.
+
+The assessment covers several categories of risks including operational risks, financial risks, technology risks, and regulatory compliance risks. For each identified risk, I've documented the potential impact, likelihood, and proposed mitigation strategies. Some risks require immediate attention, while others can be monitored over time, but I believe it's important that we have a clear understanding of all potential issues and a plan for addressing them.
+
+I'd appreciate your review of the risk assessment document and your input on any additional risks we should consider or mitigation strategies we should explore. Your perspective on operational and strategic risks would be particularly valuable given your experience with similar initiatives. Could we schedule a working session to go through the assessment together?
+
+Thank you for your continued partnership on these important matters.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to reach out regarding the cross-department collaboration framework that we've been developing. Effective collaboration across departments is essential to our success, and I believe that having a clear framework in place will help us work more effectively together and avoid the common pitfalls that can arise in cross-functional initiatives.
+
+The framework I've developed includes guidelines for communication protocols, decision-making processes, resource sharing arrangements, and conflict resolution procedures. It's designed to be practical and flexible, allowing for adaptation to different types of projects and working relationships. I've also included templates and tools that can help facilitate collaboration and ensure consistency in our approach.
+
+I'd like to review the framework with you to get your feedback and to discuss how we can best implement it across our teams. Your experience with cross-department initiatives would be invaluable in refining the framework and ensuring it addresses the real-world challenges we face. Could we schedule a meeting to go through the materials together?
+
+I'm looking forward to your input on this important initiative.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm writing to discuss the technology infrastructure upgrade proposal that we've been working on. Our current infrastructure has served us well, but as we continue to grow and evolve, we need to ensure that our technology foundation can support our future needs. The upgrade proposal addresses several critical areas including scalability, performance, security, and integration capabilities.
+
+The proposal outlines a phased approach to the upgrade, prioritizing the most critical components while minimizing disruption to ongoing operations. We've conducted a thorough analysis of our current infrastructure, identified the key areas for improvement, and developed a detailed plan for the upgrade process. The proposal includes cost estimates, timeline projections, and expected benefits, all of which have been validated through discussions with our technology partners.
+
+I'd like to review the proposal with you before we present it to the steering committee. Your technical expertise and strategic perspective would be particularly valuable in ensuring that the proposal is comprehensive and compelling. Could we schedule a meeting to go through the details together? I'm available most days next week, and I'm happy to work around your schedule.
+
+Thank you for your continued collaboration.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to touch base regarding the client relationship management review that we've scheduled for next month. Maintaining strong relationships with our key clients is fundamental to our success, and I believe it's important that we take a comprehensive look at how we're managing these relationships and identify opportunities for improvement.
+
+The review will cover several key areas including communication frequency and quality, service delivery performance, client satisfaction levels, and relationship development strategies. I've been gathering data and feedback from various sources, and I'm preparing a comprehensive analysis that will serve as the foundation for our discussion. The goal is to identify both strengths and areas for improvement, and to develop action plans for enhancing our client relationships.
+
+I'd appreciate your input on the review process and any specific areas you think we should focus on. Your experience with client relationship management would be particularly valuable in ensuring that we're asking the right questions and looking at the right metrics. Could we schedule a brief meeting to discuss the review approach before we begin the formal process?
+
+Looking forward to your insights.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm reaching out to discuss the training program development and rollout that we've been planning. Investing in our team's development is essential to maintaining our competitive advantage and ensuring that we have the skills and capabilities needed to succeed in an evolving business environment. The training program we're developing addresses several critical skill areas and is designed to be both comprehensive and practical.
+
+The program includes both technical training and professional development components, with a mix of classroom sessions, hands-on workshops, and online learning modules. We've been working with subject matter experts to develop the curriculum, and we're planning a phased rollout that will allow us to refine the program based on feedback and results. The initial phase will focus on core competencies, with advanced topics covered in subsequent phases.
+
+I'd like to review the training program proposal with you to get your feedback on the content, format, and rollout strategy. Your perspective on skill development and training effectiveness would be particularly valuable as we finalize the program design. Could we schedule a meeting to discuss the proposal? I'm available most afternoons next week, and I can send you the preliminary materials for review beforehand.
+
+Thank you for your continued partnership on this important initiative.
+
+Best regards,
+Snape`,
+
+        `Dear Marcus,
+
+I wanted to share some thoughts on the strategic planning session preparation that we need to complete. The upcoming strategic planning session is an important opportunity to align on our priorities, set clear objectives, and develop actionable plans for the coming year. I believe that thorough preparation is essential to making the session productive and ensuring that we make the most of our time together.
+
+I've been working on a preliminary agenda and discussion framework that covers the key topics we need to address, including market analysis, competitive positioning, strategic objectives, resource requirements, and success metrics. I've also prepared background materials and data that will support our discussions and help inform our decision-making. The goal is to ensure that we have a solid foundation for productive strategic discussions.
+
+I'd appreciate your input on the agenda and any additional topics or perspectives you think we should include. Your strategic insights would be particularly valuable in ensuring that we're addressing all the critical areas and asking the right questions. Could we schedule a brief meeting to review the preparation materials and discuss the approach before the formal planning session?
+
+Looking forward to our collaboration on this important initiative.
+
+Regards,
+Snape`,
+
+        `Dear Marcus,
+
+I'm writing to discuss the quarter-end reporting and analysis that we need to complete. As we approach the end of the quarter, it's important that we take a comprehensive look at our performance, identify key insights, and prepare the reporting materials that will be used for decision-making and planning purposes. I've been working on the analysis, and I'd like to review it with you to ensure we're presenting a complete and accurate picture.
+
+The reporting will include performance metrics, financial results, project status updates, and strategic insights. I've been gathering data from various sources and conducting analysis to identify trends, patterns, and areas that require attention. The goal is to provide a clear and actionable summary of our performance that can inform future planning and decision-making.
+
+I'd appreciate your review of the preliminary analysis and your input on any additional areas we should explore or insights we should highlight. Your analytical perspective would be particularly valuable in ensuring that we're extracting the most meaningful insights from the data. Could we schedule a meeting to go through the materials together? I'm available most days next week, and I can send you the preliminary reports for review beforehand.
+
+Thank you for your continued partnership.
+
+Best regards,
+Snape`
+      ]
+      const timestamps = [
+        new Date('2026-01-15T10:00:00').toISOString(),
+        new Date('2026-01-16T14:30:00').toISOString(),
+        new Date('2026-01-17T09:15:00').toISOString(),
+        new Date('2026-01-18T11:45:00').toISOString(),
+        new Date('2026-01-19T13:20:00').toISOString(),
+        new Date('2026-01-20T10:30:00').toISOString(),
+        new Date('2026-01-21T15:00:00').toISOString(),
+        new Date('2026-01-22T09:00:00').toISOString(),
+        new Date('2026-01-23T14:15:00').toISOString(),
+        new Date('2026-01-24T11:00:00').toISOString(),
+        new Date('2026-01-25T13:45:00').toISOString(),
+        new Date('2026-01-26T10:20:00').toISOString(),
+        new Date('2026-01-27T15:30:00').toISOString(),
+        new Date('2026-01-28T09:30:00').toISOString(),
+        new Date('2026-01-28T16:00:00').toISOString()
+      ]
+      
+      const marcusSentEmail = {
+        id: emailId,
+        from: 'snape@gmail.com',
+        to: 'marcus@gmail.com',
+        subject: subjects[index],
+        body: bodies[index],
+        timestamp: timestamps[index],
+        read: true,
+        starred: false,
+        archived: false,
+        sent: true,
+        draft: false,
+        spam: false,
+        trash: false,
+        snoozed: false,
+        important: false
+      }
+      emailList.push(marcusSentEmail)
+    }
+  })
+  
+  if (marcusSentEmailIds.some(id => !emailList.find(e => e.id === id))) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(emailList))
+  }
+  
+  // Ensure Marcus emails (111-121) always exist so they appear in inbox
+  const marcusEmails = getMarcusEmails()
+  let addedMarcus = false
+  marcusEmails.forEach((m) => {
+    if (!emailList.find((e) => e.id === m.id)) {
+      emailList.push(m)
+      addedMarcus = true
+    }
+  })
+  if (addedMarcus) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(emailList))
+  }
+
   return emailList
 }
 
@@ -2977,6 +3490,10 @@ export const saveEmail = (email) => {
   const existingIndex = emails.findIndex(e => e.id === email.id)
   
   if (existingIndex >= 0) {
+    // Prevent edits to locked emails (fixed challenge content)
+    if (emails[existingIndex]?.locked) {
+      return emails[existingIndex]
+    }
     emails[existingIndex] = email
   } else {
     emails.push(email)
@@ -2989,6 +3506,9 @@ export const saveEmail = (email) => {
 // Delete an email
 export const deleteEmail = (emailId) => {
   const emails = getEmails()
+  const email = emails.find(e => e.id === emailId)
+  // Prevent deletion of locked emails (fixed challenge content)
+  if (email?.locked) return
   const filtered = emails.filter(e => e.id !== emailId)
   localStorage.setItem(STORAGE_KEY, JSON.stringify(filtered))
 }
@@ -4452,9 +4972,7 @@ System Notification Service`,
 </p>
 
 <p>
-  We request confirmation that the restricted visibility settings have been
-  successfully enforced and that no automated indexing or cross-departmental
-  linkage is currently active for this initiative.
+  What ever things is not visible directly in email is not in the direct its base 56+16-8
 </p>
 
 <!-- QmxhY2sgVmVpbA== -->
@@ -4484,7 +5002,8 @@ System Notification Service`,
       trash: false,
       snoozed: false,
       important: false
-    }
+    },
+    ...getMarcusEmails()
   ]
   localStorage.setItem(STORAGE_KEY, JSON.stringify(sampleEmails))
   return sampleEmails

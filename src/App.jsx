@@ -41,7 +41,7 @@ function App() {
 
     switch (currentView) {
       case 'inbox':
-        filtered = allEmails.filter(e => !e.archived && !e.sent && !e.spam && !e.trash)
+        filtered = allEmails.filter(e => !e.archived && !e.sent && !e.draft && !e.spam && !e.trash)
         break
       case 'sent':
         filtered = allEmails.filter(e => e.sent && !e.trash)
@@ -68,7 +68,7 @@ function App() {
         filtered = allEmails.filter(e => e.trash)
         break
       default:
-        filtered = allEmails.filter(e => !e.archived && !e.sent && !e.spam && !e.trash)
+        filtered = allEmails.filter(e => !e.archived && !e.sent && !e.draft && !e.spam && !e.trash)
     }
 
     if (searchQuery) {
@@ -90,9 +90,16 @@ function App() {
   const handleEmailSelect = (email) => {
     // If it's a draft, open it in compose window for editing
     if (email.draft) {
-      setEditingDraft(email)
-      setShowCompose(true)
-      setSelectedEmail(null)
+      // Locked drafts are fixed challenge content: open read-only instead of editable compose
+      if (email.locked) {
+        setSelectedEmail(email)
+        setEditingDraft(null)
+        setShowCompose(false)
+      } else {
+        setEditingDraft(email)
+        setShowCompose(true)
+        setSelectedEmail(null)
+      }
     } else {
       setSelectedEmail(email)
       if (!email.read) {
@@ -261,6 +268,7 @@ function App() {
               onDelete={handleDeleteEmail}
               onArchive={handleArchiveEmail}
               onStar={handleStarEmail}
+              currentView={currentView}
             />
           )}
           

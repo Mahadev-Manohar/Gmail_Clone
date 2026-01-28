@@ -1,7 +1,7 @@
 import React from 'react'
 import './EmailList.css'
 
-function EmailList({ emails, selectedEmail, onEmailSelect, onDelete, onArchive, onStar }) {
+function EmailList({ emails, selectedEmail, onEmailSelect, onDelete, onArchive, onStar, currentView }) {
   const formatDate = (timestamp) => {
     const date = new Date(timestamp)
     const now = new Date()
@@ -96,7 +96,9 @@ function EmailList({ emails, selectedEmail, onEmailSelect, onDelete, onArchive, 
                   {email.starred ? 'star' : 'star_border'}
                 </span>
               </button>
-              <div className="email-sender">{email.from}</div>
+              <div className="email-sender">
+                {currentView === 'sent' && email.to ? `To: ${email.to}` : email.from}
+              </div>
             </div>
             <div className="email-item-content">
               <div className="email-subject-line">

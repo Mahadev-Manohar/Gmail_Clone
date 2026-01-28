@@ -3,7 +3,7 @@ import './Sidebar.css'
 
 function Sidebar({ currentView, setCurrentView, onCompose, emails }) {
   const getUnreadCount = () => {
-    return emails.filter(e => !e.read && !e.archived && !e.sent).length
+    return emails.filter(e => !e.read && !e.archived && !e.sent && !e.draft).length
   }
 
   const menuItems = [
