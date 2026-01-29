@@ -27,7 +27,14 @@
 .google-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
+}
+
+.google-logo svg {
+  display: block;
+  height: 48px;
+  width: auto;
 }
 
 .login-title {
