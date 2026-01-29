@@ -5,9 +5,9 @@ import EmailView from './components/EmailView'
 import ComposeEmail from './components/ComposeEmail'
 import ProfileDropdown from './components/ProfileDropdown'
 import { getEmails, saveEmail, deleteEmail, archiveEmail, markAsRead, populateInbox } from './utils/emailStorage'
-import './App.css'
+import './GmailApp.css'
 
-function App() {
+function GmailApp() {
   const [currentView, setCurrentView] = useState('inbox')
   const [selectedEmail, setSelectedEmail] = useState(null)
   const [emails, setEmails] = useState([])
@@ -304,5 +304,4 @@ function App() {
   )
 }
 
-export default App
-
+export default GmailApp
