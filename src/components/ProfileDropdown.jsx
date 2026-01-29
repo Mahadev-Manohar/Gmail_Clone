@@ -1,8 +1,17 @@
 import React, { useRef, useEffect } from 'react'
 import './ProfileDropdown.css'
+import { useNavigate } from 'react-router-dom';
 
-function ProfileDropdown({ isOpen, onClose, userInfo }) {
+
+
+function ProfileDropdown({ isOpen, onClose, userInfo, onLogout }) {
   const dropdownRef = useRef(null)
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    onLogout();           // reset auth state
+    navigate('/login', { replace: true }); // go to login
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -84,7 +93,7 @@ function ProfileDropdown({ isOpen, onClose, userInfo }) {
         <div className="profile-divider"></div>
         
         <div className="profile-options">
-          <button className="profile-option sign-out">
+          <button className="profile-option sign-out" onClick={handleSignOut}>
             <span>Sign out</span>
           </button>
         </div>

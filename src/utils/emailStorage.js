@@ -2897,15 +2897,10 @@ Please read the following instructions carefully before starting the challenge. 
 
 Flag Format:
 The flag has three parts and follows this format:
-
-FLAG{POSITION_PROJECTNAME_CODEWORD}
-
+ZeroTrace{POSITION_PROJECTNAME_CODEWORD}
 All letters must be in CAPITALS
-
 From each part, extract only the required first letters
-
 Combine all three parts in the correct order to get the final flag
-
 Part 1 – SNAPE POSITION
 Find Snape’s position in his organization.
 Use this information to derive the first part of the flag.
@@ -2920,11 +2915,9 @@ Hint: Do not rely only on visible text.
 Part 3 – CODEWORD
 Find the secret code word shared between Snape and his friend.
 This code word forms the final part of the flag.
-
 To proceed with next challenge you have to find the Website link: 
 To retrieve the final link, Snape must be verified by his organization.
 Only after successful verification,the access be granted.
-
 Make sure all steps are followed correctly. Any mistake in extraction or formatting will result in an invalid flag.
 
 Best of luck`,

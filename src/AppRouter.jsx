@@ -33,6 +33,10 @@ function AppRouter() {
     setIsAuthenticated(true);
   };
 
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+  };
+
   return (
     <BrowserRouter>
       <Routes>
@@ -44,7 +48,7 @@ function AppRouter() {
           path="/" 
           element={
             <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <GmailApp />
+              <GmailApp onLogout={handleLogout} />
             </ProtectedRoute>
           } 
         />
