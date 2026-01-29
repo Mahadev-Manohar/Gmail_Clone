@@ -7,7 +7,7 @@ import ProfileDropdown from './components/ProfileDropdown'
 import { getEmails, saveEmail, deleteEmail, archiveEmail, markAsRead, populateInbox } from './utils/emailStorage'
 import './GmailApp.css'
 
-function GmailApp() {
+function GmailApp({ onLogout }) {
   const [currentView, setCurrentView] = useState('inbox')
   const [selectedEmail, setSelectedEmail] = useState(null)
   const [emails, setEmails] = useState([])
@@ -299,6 +299,7 @@ function GmailApp() {
         isOpen={showProfileDropdown}
         onClose={() => setShowProfileDropdown(false)}
         userInfo={userInfo}
+        onLogout={onLogout}
       />
     </div>
   )
