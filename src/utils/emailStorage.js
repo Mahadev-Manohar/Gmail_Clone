@@ -2971,7 +2971,7 @@ Regards,
 Verification Team
 DullSleep Organisation
 Verification ensures trust.`,
-      timestamp: new Date('2026-01-28T11:00:00').toISOString(),
+      timestamp: new Date('2025-05-24T11:00:00').toISOString(),
       read: false,
       starred: false,
       archived: false,
