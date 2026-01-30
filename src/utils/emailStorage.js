@@ -2901,20 +2901,19 @@ ZeroTrace{POSITION_PROJECTNAME_CODEWORD}
 All letters must be in CAPITALS
 From each part, extract only the required first letters
 Combine all three parts in the correct order to get the final flag
+
 Part 1 – SNAPE POSITION
-Find Snape’s position in his organization.
-Use this information to derive the first part of the flag.
+Organisation has promoted snape to a job role. Find that role .
+They have confirmed this role through the mail .
 
 Part 2 – PROJECTNAME
-The second part is hidden inside this message.
-You must inspect the message carefully.
-The project name is present in encrypted form. So decide it to reveal the project name 
-Hint1: Under Document synchronisation 
-Hint2: Do not rely only on visible text.
+Under the subject document synchronisation in mail, the project name was hidden.
+The project name is present in encrypted form.
+Hint: It is in encrypted form. Do not rely only on visible text alone.
 
 Part 3 – CODEWORD
-Find the secret code word which was disclosed between Snape and his frequently contacted friend in recent converations.
-This code word forms the final part of the flag.
+Snapes frequently contacted friend has shared the code word to snape.
+Hint: Code word is not directly given .It is from the mail content.
 
 Next Level Website Link:
 To proceed with next challenge you have to find the Website link: 
