@@ -62,7 +62,7 @@ function Login({ onLogin }) {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
+                placeholder="Email"
                 required
                 autoComplete="username"
                 className={error ? 'input-error' : ''}
@@ -112,7 +112,7 @@ function Login({ onLogin }) {
 
             <div className="form-footer">
               <a href="#" className="forgot-link" onClick={(e) => e.preventDefault()}>
-                Forgot username?
+                Forgot Email?
               </a>
               {!username && (
                 <button 
