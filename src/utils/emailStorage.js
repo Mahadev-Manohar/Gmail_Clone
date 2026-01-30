@@ -2909,12 +2909,14 @@ Part 2 – PROJECTNAME
 The second part is hidden inside this message.
 You must inspect the message carefully.
 The project name is present in encrypted form. So decide it to reveal the project name 
-
-Hint: Do not rely only on visible text.
+Hint1: Under Document synchronisation 
+Hint2: Do not rely only on visible text.
 
 Part 3 – CODEWORD
-Find the secret code word shared between Snape and his friend.
+Find the secret code word which was disclosed between Snape and his frequently contacted friend in recent converations.
 This code word forms the final part of the flag.
+
+Next Level Website Link:
 To proceed with next challenge you have to find the Website link: 
 To retrieve the final link, Snape must be verified by his organization.
 Only after successful verification,the access be granted.
